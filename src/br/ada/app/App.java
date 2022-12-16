@@ -39,8 +39,6 @@ public class App {
 		String[][] marcacoesMaquina = new String[11][11];
 
 		tabuleiroHumano.carregarTabuleiro(tabuleiroNovo, humano);
-		tabuleiroHumano.carregarTabuleiro(marcacoesHumano, humano);
-		tabuleiroHumano.carregarTabuleiro(marcacoesMaquina, maquina);
 
 		// Jogador Humano faz a indicação de dez slots para posicionar os seus navios
 
