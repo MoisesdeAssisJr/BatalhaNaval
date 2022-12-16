@@ -1,6 +1,7 @@
 package br.ada.app.modelo;
 
 import java.util.Objects;
+import java.util.Random;
 import java.util.Scanner;
 
 public class Tabuleiro {
@@ -107,50 +108,8 @@ public class Tabuleiro {
 		System.out.printf(tabela, tipo);
 	}
 
-	public String[][] setMarcacoesAtaques(String[][] marcacoes, Jogador jogador) {
-		String coordenadasAtaque;
-		String linhaAtaqueLetra = null;
-		int colunaAtaque = 0;
-		int linhaAtaque = 0;
-
-		for (int i = 0; i < 10; i++) {
-
-			System.out.println("Informe as coordenadas da localização dos seus navios: ");
-			coordenadasAtaque = scan.next();
-			linhaAtaqueLetra = coordenadasAtaque.substring(0, 1);
-
-			if (linhaAtaqueLetra.equals("a")) {
-				linhaAtaque = 1;
-			} else if (linhaAtaqueLetra.equals("b")) {
-				linhaAtaque = 2;
-			} else if (linhaAtaqueLetra.equals("c")) {
-				linhaAtaque = 3;
-			} else if (linhaAtaqueLetra.equals("d")) {
-				linhaAtaque = 4;
-			} else if (linhaAtaqueLetra.equals("e")) {
-				linhaAtaque = 5;
-			} else if (linhaAtaqueLetra.equals("f")) {
-				linhaAtaque = 6;
-			} else if (linhaAtaqueLetra.equals("g")) {
-				linhaAtaque = 7;
-			} else if (linhaAtaqueLetra.equals("h")) {
-				linhaAtaque = 8;
-			} else if (linhaAtaqueLetra.equals("i")) {
-				linhaAtaque = 9;
-			} else if (linhaAtaqueLetra.equals("j")) {
-				linhaAtaque = 10;
-			}
-			colunaAtaque = 1 + Integer.parseInt(coordenadasAtaque.substring(1));
-
-			marcacoes[linhaAtaque][colunaAtaque] = "N";
-			}
-		return marcacoes;
 
 
-//		System.out.println(linhaAtaqueLetra);
-//		System.out.println(linhaAtaque);
-//		System.out.println(colunaAtaque);
-	}
 
 
 }
