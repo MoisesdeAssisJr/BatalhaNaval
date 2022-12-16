@@ -70,7 +70,7 @@ public class Tabuleiro {
 			tabela += "|\n---------------------------------------------\n";
 
 		}
-		System.out.printf(tabela, tipo);
+		//System.out.printf(tabela, tipo);
 	}
 
 	public void imprimirTabuleiro(String[][] marcacoes, Jogador jogador) {
